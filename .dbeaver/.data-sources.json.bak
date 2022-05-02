@@ -11,19 +11,6 @@
 				"database": "G:\\내 드라이브\\학교 문서\\2022 Spring\\IS211\\Assignment\\IS211_Assignment12\\grades.db",
 				"url": "jdbc:sqlite:G:\\내 드라이브\\학교 문서\\2022 Spring\\IS211\\Assignment\\IS211_Assignment12\\grades.db",
 				"type": "dev",
-				"auth-model": "native"
-			}
-		},
-		"sqlite_jdbc-18085ab2e15-2f750c583589ed70": {
-			"provider": "sqlite",
-			"driver": "sqlite_jdbc",
-			"name": "grades.db 2",
-			"save-password": true,
-			"read-only": false,
-			"configuration": {
-				"database": "G:\\내 드라이브\\학교 문서\\2022 Spring\\IS211\\Assignment\\IS211_Assignment12\\grades.db",
-				"url": "jdbc:sqlite:G:\\내 드라이브\\학교 문서\\2022 Spring\\IS211\\Assignment\\IS211_Assignment12\\grades.db",
-				"type": "dev",
 				"auth-model": "native",
 				"handlers": {}
 			}

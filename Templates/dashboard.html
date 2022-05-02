@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h3>List of Students</h3>
+    <table border="2">
+        <tr>
+            <td>Student ID</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+        </tr>
+        {% for student in students %}
+            <tr>
+                <td>{{ student['id'] }}</td>
+                <td>{{ student['first'] }}</td>
+                <td>{{ student['last'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <br>
+    <h3>List of Quizzes</h3>
+    
+    <table border="2">
+        <tr>
+            <td>Quiz ID</td>
+            <td>Subject</td>
+            <td>Number of Questions</td>
+            <td>Quiz Date</td>
+        </tr>
+        {% for quiz in quizzes %}
+            <tr>
+                <td>{{ quiz['quiz_id'] }}</td>
+                <td>{{ quiz['subject'] }}</td>
+                <td>{{ quiz['number_q'] }}</td>
+                <td>{{ quiz['quiz_date'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>

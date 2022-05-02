@@ -10,19 +10,23 @@
     <h1>List of Students</h1>
     <p>Here is the list of students:</p>
 
-    <table border="2">
-        <tr>
-            <td>Student ID</td>
-            <td>First Name</td>
-            <td>Last Name</td>
-        </tr>
-        {% for student in students %}
+    {% if score == "" %}
+        <h3>No Result</h3>
+    {% else %}
+        <h3>List of Students with Grades</h3>
+        <table border="2">
             <tr>
-                <td>{{ student['id'] }}</td>
-                <td>{{ student['first'] }}</td>
-                <td>{{ student['last'] }}</td>
+                <td>Student ID</td>
+                <td>First Name</td>
+                <td>Last Name</td>
             </tr>
-        {% endfor %}
+            {% for student in students %}
+                <tr>
+                    <td>{{ student['id'] }}</td>
+                    <td>{{ student['first'] }}</td>
+                    <td>{{ student['last'] }}</td>
+                </tr>
+            {% endfor %}
     </table>
     
 </body>
