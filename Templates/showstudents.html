@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Students</title>
+</head>
+<body>
+    <h1>List of Students</h1>
+    <p>Here is the list of students:</p>
+
+    <table border="2">
+        <tr>
+            <td>Student ID</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+        </tr>
+        {% for student in students %}
+            <tr>
+                <td>{{ student['id'] }}</td>
+                <td>{{ student['first'] }}</td>
+                <td>{{ student['last'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>

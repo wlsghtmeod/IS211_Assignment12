@@ -1,0 +1,30 @@
+{
+	"folders": {},
+	"connections": {
+		"sqlite_jdbc-180824f7a3a-2ff70d5c5fdf0422": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "grades.db",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"database": "G:\\내 드라이브\\학교 문서\\2022 Spring\\IS211\\Assignment\\IS211_Assignment12\\grades.db",
+				"url": "jdbc:sqlite:G:\\내 드라이브\\학교 문서\\2022 Spring\\IS211\\Assignment\\IS211_Assignment12\\grades.db",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
